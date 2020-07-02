@@ -131,7 +131,7 @@ class HTTPMode(enum.Enum):
 # At this point, we see only a subset of the proxy modes
 MODE_REQUEST_FORMS = {
     HTTPMode.regular: ("authority", "absolute"),
-    HTTPMode.transparent: ("relative",),
+    HTTPMode.transparent: ("relative", "absolute"),
     HTTPMode.upstream: ("authority", "absolute"),
 }
 
